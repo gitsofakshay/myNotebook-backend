@@ -7,8 +7,12 @@ connectToMongo();
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(cors())
-app.use(cors({ origin: 'https://mynotebookoncloud.netlify.app' }));
+// Configure CORS
+app.use(cors({
+  origin: 'https://mynotebookoncloud.netlify.app', // Netlify frontend URL
+  methods: 'GET,POST,PUT,DELETE', // Allowed HTTP methods
+  credentials: true // Allow credentials if needed
+}));
 
 app.use(express.json());
 

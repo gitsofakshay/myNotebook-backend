@@ -2,6 +2,7 @@ const express = require('express');
 const connectToMongo = require('./db');
 const cors = require('cors');
 require('dotenv').config();
+app.use(cors({ origin: 'https://mynotebookoncloud.netlify.app' }));
 
 connectToMongo();
 const app = express();

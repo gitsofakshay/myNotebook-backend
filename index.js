@@ -2,13 +2,13 @@ const express = require('express');
 const connectToMongo = require('./db');
 const cors = require('cors');
 require('dotenv').config();
-app.use(cors({ origin: 'https://mynotebookoncloud.netlify.app' }));
 
 connectToMongo();
 const app = express();
 const port = process.env.PORT || 3000;
- 
+
 app.use(cors())
+app.use(cors({ origin: 'https://mynotebookoncloud.netlify.app' }));
 
 app.use(express.json());
 

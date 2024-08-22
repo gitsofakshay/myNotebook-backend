@@ -1,16 +1,16 @@
 {
   "name": "mynotebook-backend",
   "version": "1.0.0",
-  "description": "mynotebook is web application to store and access your notes on the cloud",
+  "description": "mynotebook is a web application to store and access your notes on the cloud",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js",
-  "dev": "nodemon index.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
-"engines": {
-  "node": ">=14.x"
-},
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -26,7 +26,7 @@
     "nodemailer": "^6.9.14"
   },
   "devDependencies": {
-  "nodemon": "^2.0.22",
-  "@types/cors": "^2.8.17"
-}
+    "nodemon": "^2.0.22",
+    "@types/cors": "^2.8.17"
+  }
 }

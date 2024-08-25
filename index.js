@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 const corsOptions = {
   origin: 'https://mynotebookoncloud.netlify.app', // Netlify frontend URL
   methods: 'GET,POST,PUT,DELETE', // Allowed methods
-  allowedHeaders: 'Content-Type,Authorization', // Allowed headers
+  allowedHeaders: 'Content-Type,Authorization,auth-token', // Allowed headers
   credentials: true // Enable credentials (cookies, etc.)
 };
 
